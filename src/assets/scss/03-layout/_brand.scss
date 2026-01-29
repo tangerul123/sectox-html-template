@@ -1,0 +1,24 @@
+/*----------------------------------------*/
+/*  brand css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.brand-area{
+    background: #212121;
+}
+.brand {
+	align-items: center;
+    & .brand-content {
+        margin-left: 10px;
+        & .brand-title {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+        &  span {
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+    }
+}
+

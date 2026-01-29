@@ -1,0 +1,113 @@
+/*----------------------------------------*/
+/*  slider css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.slider-hight {
+	min-height: 810px;
+    @media #{$large-mobile}{
+        min-height: 670px;
+      }
+}
+.slider-sub-titile {
+	background: #3c8599;
+	color: #fff;
+	font-weight: 700;
+	padding: 4px 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.slider-titile {
+	font-size: 80px;
+	line-height: 1.1;
+	font-weight: 700;
+    margin-bottom: 14px;
+    @media #{$laptop-device}{
+        font-size: 60px;
+      }
+    @media #{$large-mobile}{
+        font-size: 40px;
+      }
+    
+}
+.slider-content {
+   & p {
+        color: #696868;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+.slide-btn-box {
+	display: flex;
+    margin-top: 40px;
+    align-items: center;
+    @media #{$large-mobile}{
+        display: block;
+      }
+}
+.slide-service {
+    display: flex;
+    align-items: center;
+    @media #{$large-mobile}{
+        margin-bottom:10px ;
+      }
+    & span {
+        font-size: 14px;
+        color: #212121;
+        line-height: 18px;
+    }
+    & h4 {
+        color: #3c8599;
+        font-size: 48px;
+        margin-right: 13px;
+        margin-bottom: 0px;
+
+    }
+}
+.slider-active {
+    button{
+        position: absolute;
+        top: 50%;
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        border: 2px solid #222;
+        border-radius: 50%;
+        color: #222;
+        z-index: 3;
+        left: 60px;
+        transform: translateY(-50%);
+        transition: .3s;
+        @media #{$laptop-device}{
+            left: 10px;
+            height: 40px;
+            width: 40px;
+          }
+        @media #{$desktop-device}{
+            top: auto;
+            bottom: 20px;
+          }
+        &.next{
+            left: auto;
+            right: 60px;
+            @media #{$laptop-device}{
+                left: auto;
+                right: 10px;
+           
+              }
+            @media #{$desktop-device}{
+                left: 140px;
+                right: auto;
+           
+              }
+                
+        }
+        &:hover{
+            background: #212121;
+            color: #fff;
+        }
+    }
+}
+
+  

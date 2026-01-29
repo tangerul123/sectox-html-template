@@ -1,0 +1,83 @@
+/*----------------------------------------*/
+/*  pricing CSS
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.pricing-area{
+    background: #212121;
+}
+.pricing-head {
+    background: #171717;
+    padding: 50px;
+    & h6 {
+        font-size: 16px;
+        color: #ffc000;
+        font-weight: 700;
+      }
+    & .theme-color-2{
+        color: #2bbb94;
+    }
+    & .theme-color-3{
+        color: #ea6666;
+    }
+    & h3 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        margin-top: 13px;
+      }
+    &  p {
+        font-size: 14px;
+        color: #b5b5b5;
+    }
+  }
+ 
+  
+.pricing-features {
+    background: #2e2e2e;
+    padding: 43px 50px;
+    & ul {
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+            &:last-child{
+                margin-bottom: 0px;
+              }
+            &  i {
+                position: absolute;
+                left: 0px;
+                top: 6px;
+            }
+              
+          }
+        & .pricing-active {
+            color: #fff;
+         } 
+    }
+  }
+  .pricing-btn {
+    & .black-btn{
+        width: 100%;
+      }
+    
+  }
+  .active{
+    .pricing-btn {
+        & .black-btn{
+            width: 100%;
+            background: #2bbb94;
+            &:hover{
+                background: #171717;
+                color: #fff;
+            }
+          }
+        
+      }
+}
+.pricing-badge {
+	text-align: center;
+	padding: 1px 0px;
+	background: #2bbb94;
+	color: #fff;
+	font-weight: 700;
+}

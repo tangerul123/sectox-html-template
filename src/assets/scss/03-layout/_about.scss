@@ -1,0 +1,99 @@
+/*----------------------------------------*/
+/*  about css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.ab-sm {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    @media #{$large-mobile}{
+        top: -100px;
+      }
+}
+.ab-lg{
+    @media #{$desktop-device}{
+        margin-left: -38px;
+      }
+    @media #{$large-mobile}{
+        margin-left:0px;
+        padding: 0px;
+      }
+}
+.ab-offer {
+	position: absolute;
+	bottom: 40px;
+	right: 0px;
+	background: #3c8599;
+	align-items: center;
+	border-radius: 50%;
+	padding: 30px 44px;
+    @media #{$desktop-device}{
+        bottom: 38px;
+        right: -10px;
+      }
+      @media #{$large-mobile}{
+       bottom: 0px;
+       right: 100px;
+      }
+    @media #{$tablet-device}{
+        right: 30px;
+      }
+      @media #{$extra-small-mobile}{
+        right: 65px;
+      }
+    & p{
+         color: #fff;
+         font-size: 18px;
+         font-weight: 700;
+    }
+    & h2{
+        font-size: 80px;
+        color: #fff;
+        @media #{$large-mobile}{
+            font-size: 55px;
+           }
+        & span{
+            font-size: 20px;
+
+        }
+    }
+    & .ab-offer-date{
+        font-size: 14px;
+    }
+}
+.about-meta-text {
+   & h4 {
+        letter-spacing: 0px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        @media #{$desktop-device}{
+            font-size: 16px;
+          }
+        @media #{$large-mobile}{
+            font-size: 16px;
+          }
+        @media #{$tablet-device}{
+            margin-top: 20px;
+          }
+    }
+    & span{
+        color: #3c8599;
+        b{
+            color: #212121;
+            margin-right: 10px;
+        }
+    }
+}
+.about-wrapper{
+    & .big-text{
+        @media #{$tablet-device}{
+            top: -50px;
+          }
+          @media #{$large-mobile}{
+                font-size: 91px;
+	            top: -49px;
+	            left: 0px;
+           }
+    }
+}

@@ -1,0 +1,70 @@
+/*----------------------------------------*/
+/*  fact css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.fact-area{
+    background: #3c8599;
+}
+.fact-number {
+    display: inline-block;
+    text-align: center;
+    & h2 {
+        color: transparent;
+        font-size: 70px;
+        -webkit-text-stroke: 1px #fff;
+        line-height: 1;
+    }
+    &  span {
+        display: inline-block;
+        background: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        color: #212121;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        transform: translateY(-25px);
+    }
+}
+.fact-content {
+    z-index: 2;
+    & h4 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    & p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+.fact{
+    display: flex;
+    align-items: flex-start;
+}
+.counter-row{
+    counter-reset: count;
+}
+.num_count::before{
+    text-align: center;
+    color:#448ca0 ;
+    font-size: 100px;
+    font-weight: 700;
+    counter-increment: count;
+    content: "0" counter(count);
+    display: inline-block;
+    transition: all 500ms ease;
+}
+.num_count {
+	position: absolute;
+	right: 20px;
+	top: -69px;
+	z-index: 1;
+    @media #{$desktop-device}{
+        right: 5px;
+      }
+}

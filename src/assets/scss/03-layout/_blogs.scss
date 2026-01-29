@@ -1,0 +1,80 @@
+/*----------------------------------------*/
+/*  blogs css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+
+.blogs-content {
+	margin-top: 25px;
+    & span {
+        color: $lightBlue;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        display: inline-block;
+        text-transform: uppercase;
+        & b {
+            color: #bfbfbf;
+        }
+    }
+    & .blogs-title {
+        font-size: 23px;
+        font-weight: 700;
+        color: #212121;
+        line-height: 34px;
+        @media #{$laptop-device}{
+            font-size: 20px;
+          }
+        @media #{$desktop-device,$tablet-device,$large-mobile}{
+            font-size: 17px;
+          }
+    }
+}
+.blogs-link {
+    margin-top: 19px;
+    & a {
+        font-weight: 700;
+        font-size: 14px;
+        transition: .3s;
+        i {
+            margin-left: 10px;
+        }
+        &:hover{
+            color:$lightBlue ;
+        }
+      }
+  }
+  .blogs-img{
+    overflow: hidden;
+    & img{
+        width: 100%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    &:hover {
+        img{
+            transform: scale(1.1);
+        }
+    }
+  }
+  .blogs-date {
+	position: absolute;
+	right: 30px;
+	top: -66px;
+	padding: 11px;
+	background: #3c8599;
+	text-align: center;
+    & h3 {
+        font-size: 40px;
+        line-height: 1;
+        color: #fff;
+    }
+    &  p {
+        color: #fff;
+        font-weight: 600;
+        line-height: 1;
+    }
+}
+
+
+
+

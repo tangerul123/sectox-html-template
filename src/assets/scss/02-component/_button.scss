@@ -1,0 +1,62 @@
+/*----------------------------------------*/
+/*  button
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.tp-btn {
+	text-align: center;
+	height: 50px;
+	background: #3c8599;
+	display: inline-block;
+	font-size: 14px;
+	color: #fff;
+	line-height: 52px;
+	padding: 0px 36px;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-left: 15px;
+    transition: 0.3s;
+    &:hover{
+        background: #212121;
+    }
+}
+.tp-btn-white{
+	text-align: center;
+	height: 50px;
+	background: #fff;
+	display: inline-block;
+	font-size: 14px;
+	color: #212121;
+	line-height: 52px;
+	padding: 0px 36px;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-left: 15px;
+    transition: 0.3s;
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+	@media #{$large-mobile}{
+        margin-left:0px ;
+      }
+    &:hover{
+        background: #3c8599;
+		color:#fff ;
+    }
+}
+
+.black-btn{
+	text-align: center;
+	height: 50px;
+	background: #171717;
+	display: inline-block;
+	font-size: 14px;
+	color: #ffff ;
+	line-height: 52px;
+	padding: 0px 36px;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-left: 0px;
+    transition: 0.3s;
+    &:hover{
+        background: #ffff;
+		color: #171717;
+    }
+}

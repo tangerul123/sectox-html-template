@@ -1,0 +1,39 @@
+/*----------------------------------------*/
+/*  project css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.project-item {
+    & img{
+        width: 100%;
+        display: block;
+    }
+}
+.slider-space-60{
+    .slick-slide{
+        padding: 0px 30px;
+    }
+}
+.project-item {
+    position: relative;
+  &  a {
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        background: #fff;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 23px;
+        color: #3c8599;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+    }
+}
+.slick-center {
+        & a{
+            opacity: 1;
+            visibility: visible;
+        }
+}

@@ -1,0 +1,73 @@
+/*----------------------------------------*/
+/*  04. section CSS
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.big-text {
+	font-size: 160px;
+	color: transparent;
+	-webkit-text-stroke: 1px #f4f4f4;
+	position: absolute;
+	top: -70px;
+	left: -40px;
+	z-index: -1;
+    @media #{$desktop-device}{
+        font-size: 118px;
+	    top: -48px;
+	    left: -13px;
+    }
+    @media #{$laptop-device}{
+        
+	    left: 0px;
+    }
+    @media #{$tablet-device}{
+        font-size: 118px;
+    }
+    @media #{$large-mobile}{
+        font-size: 56px;
+        top: -46px;
+        left: 3px;
+    }
+}
+.text-center{
+    & .big-text{
+        right: 0px;
+        z-index: -1;
+    }
+}
+
+.section-title {
+        font-size: 60px;
+        color: #212121;
+        font-weight: 700;
+        letter-spacing: -2.5px;
+        @media #{$desktop-device}{
+            font-size: 45px;
+          }
+        @media #{$large-mobile}{
+            font-size: 35px;
+          }
+    }
+.section-sub-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #3c8599;
+        font-weight: 700;
+        padding: 5px 10px;
+    }
+.black-section{
+    & .section-title{
+        color: #fff;
+    }
+    & .big-text{
+        -webkit-text-stroke: 1px #2e2e2e;
+    }
+  }
+  .big-text {
+	
+	z-index: -1;
+    
+}
+      
+ 
+  

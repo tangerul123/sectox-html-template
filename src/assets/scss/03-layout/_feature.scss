@@ -1,0 +1,99 @@
+/*----------------------------------------*/
+/*  feature css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.fea-list {
+	justify-content: space-between;
+    align-items: center;
+}
+.fea-content {
+    margin-left: 25px;
+    & .fea-titile {
+        font-size: 24px;
+        font-weight: 700;
+        color: #212121;
+        margin-bottom: 15px;
+    }
+    & p {
+        font-size: 14px;
+        color: #777777;
+        line-height: 24px;
+        @media #{$large-mobile}{
+           font-size: 13px;
+        }
+    }
+}
+.fea-main.d-flex {
+    @media #{$desktop-device}{
+        margin-right: 30px;
+    }
+}
+.feature-box{
+    @media #{$large-mobile}{
+        padding-right: 0px;
+    }
+    .section-title{
+        @media #{$laptop-device}{
+            font-size: 55px;
+        }
+    }
+    .big-text{
+        font-size: 150px;
+        @media #{$desktop-device,$laptop-device}{
+            font-size: 110px;
+
+        }
+        @media #{$large-mobile}{
+            font-size: 80px;
+	        top: -47px;
+	        left: 0px;
+
+        }
+      
+    }
+}
+.fea-link {
+    & a{
+      
+      & i {
+            background: #f1f1f1;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            color: #212121;
+            transition: .3s;
+            font-size: 20px;
+            &:hover{
+                background: #3c8599;
+                color: #f1f1f1;
+              }
+        }
+    }
+}
+.fea-list-wrapper{
+    & ul{
+        & li{
+           padding: 30px 0;
+           border-top: 1px solid #f1f1f1;
+        }
+      }
+}
+.fea-bg {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    @media #{$tablet-device,$large-mobile}{
+        position: static;
+        height: 300px;
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,75 @@
+/*----------------------------------------*/
+/*  testimonial css
+/*----------------------------------------*/
+@use"../00-helpers" as *;
+.testimonial-area{
+    background-color:#f7f7f7;
+   
+}
+.big-text {
+    -webkit-text-stroke: 1px #efefef;
+}
+.section-box {
+	z-index: 1;
+}
+
+.testimonial{
+    background: #fff;
+    padding: 50px 40px;
+    position: relative;
+    z-index: 1;
+    &  .testimonial-quote-icon {
+        position: absolute;
+        bottom: 36px;
+        right: 0px;
+        left: 0px;
+        z-index: -3;
+      }
+    & .testimonial-titile{
+        font-size: 24px;
+        font-weight: 700;
+        @media #{$desktop-device,$large-mobile}{
+            font-size: 19px;
+          }
+
+    }
+    & .testimonial-img {
+        margin-top: 23px;
+        & i {
+            background: #3c8599;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            color: #fff;
+            transform: translateX(-21px);
+        }
+    }
+    & .testimonial-meta {
+        margin-top: 15px;
+        & .riviewr-name {
+            font-size: 24px;
+            font-weight: 700;
+          }
+        & .riviewr-position {
+            font-size: 14px;
+            font-weight: 500;
+            color: #777777;
+          }
+      }
+}
+
+.slider-space-30 .slick-slide {
+	padding: 0px 15px;
+}
+.slider-space-30 .slick-list {
+	margin: 0px -15px;
+}
+.slick-slide img {
+	display: inline-block;
+}
+
+ 
+
+
+
